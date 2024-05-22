@@ -1,0 +1,54 @@
+ 
+.card-img{
+    height: 50vh;
+    
+}
+.active{
+    
+    background-color: rgb(156, 161, 161);
+    box-sizing: border-box;
+    border-radius: 10%;
+}
+  
+.cate{
+    margin:12px 12px;
+    animation-name: click;
+    animation-duration: 1.5s;
+}
+ 
+ 
+.slide{
+    width: 98%;
+    display: flex;
+    justify-content: center;
+height: 80vh; 
+}
+.d-block{
+    height: 80vh;
+    width: 100%;
+    box-sizing: border-box;
+border-radius: 1%; 
+
+}
+.btnscroll{
+    position: fixed;
+bottom: 20px;
+right: 20px;
+font-weight: bold;
+background-color: rgb(65, 72, 88);
+
+border-radius: 8px; 
+}
+
+@keyframes click {
+    from{
+width:  240px;
+    }
+    to{
+width:  145px;
+    }
+}
+.btn{
+    color: white;
+}
+ 
