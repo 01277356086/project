@@ -1,10 +1,10 @@
 import img1 from "./images/x612.jpg";
 import img2 from "./images/24ZF8.jpg";
 import img3 from "./images/2XN.jpg"
-import "./productslist.css"
+
 
 import Carousel from 'react-bootstrap/Carousel';
-
+import "./productslist.css"
 
 function Slider() {
   return (

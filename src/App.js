@@ -1,11 +1,9 @@
 import { Route,Routes } from "react-router-dom";
 import Nav from "./Nav.js"
 import Slider from "./Slider.js"
-import Productslist from './Productslist.js';
-// import Details from "./Details.js";
+import Productslist from './Productslist.js'; 
 import About from "./About.js";
-import Detail from "./Detail.js";
-// import Scroll from "./Scroll.js";
+import Detail from "./Detail.js";  
 
 function App() {
   return (
@@ -23,6 +21,7 @@ function App() {
         <Route  path="/products" element={<Productslist/>}/>
 
       </Routes>
+   
     </>
   );
 }

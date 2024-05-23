@@ -25,12 +25,16 @@ function Productslist() {
         fetch(apilink)
             .then((res) => res.json())
             .then((data) => setproducts(data));
-
+ 
 
         fetch('https://fakestoreapi.com/products/categories')
             .then((res) => res.json())
             .then((cate) => setcategories(cate))
     }, []);
+
+
+
+    
     return (
         <>  <Scroll />
             <h1 className="text-center p-5"> Products</h1>
@@ -54,7 +58,7 @@ function Productslist() {
 
                         return (
                             <div className='col-4 ' key={prod.id}>
-                                <Product prod={prod} className='prods' showButton={true} />
+                                <Product prod={prod} showtitle={false} className='prods' showButton={true} />
                             </div>
                         )
                     })}

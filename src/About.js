@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.css' 
-import Productslist from './Productslist';
+// import Productslist from './Productslist';
 function About() {
   return (
 

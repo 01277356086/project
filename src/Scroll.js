@@ -10,22 +10,20 @@ function Scroll() {
             left:0,
             top:0,
             behavior:"smooth"
+            
         });
     }
     
-    const click = () => {
-        if (window.confirm("Do you want return to the Top of Page ?")) {
-            {scroll()}
-        }
-    };
+    // const click = () => {
+    //     if (window.confirm("Do you want return to the Top of Page ?")) {
+    //         {scroll()}
+    //     }
+    // };
 
 
     return (
         <>
-        <Button variant="outline-light" className="btnscroll" onClick={click}>   Top </Button>
-      
-       
-        
+        <Button  variant="outline-light" className="btnscroll" onClick={scroll}>   Top </Button>
        
         </>
     );

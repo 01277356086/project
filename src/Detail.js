@@ -8,10 +8,9 @@ import { ButtonGroup } from "react-bootstrap";
 import "./productslist.css"
 function Detail() {
     const params = useParams();
-    const [product, setproduct] = useState({});
-    const apilink = "https://fakestoreapi.com/products";
-
-    const [products, setproducts] = useState([]);
+    const [product, setproduct] = useState([]);
+    const apilink = "https://fakestoreapi.com/products"; 
+    
     useEffect(() => {
         fetch(`${apilink}/${params.prodid}`)
             .then((res) => res.json())
@@ -23,9 +22,8 @@ function Detail() {
         <>
             <div>
                 <Button><Link to={"/products"} className="btn">  Retutn To All Products  </Link></Button>
-                <Product prod={product} showButton={false} />
-
-
+                <Product prod={product} showtitle={true} showButton={false} />
+ 
             </div>
         </>
 

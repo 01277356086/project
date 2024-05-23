@@ -3,13 +3,18 @@
     height: 50vh;
     
 }
+ 
 .active{
     
     background-color: rgb(156, 161, 161);
     box-sizing: border-box;
     border-radius: 10%;
 }
-  
+@media(max-width:700px) {
+    .active{
+        border-radius: 1%;
+    }
+}
 .cate{
     margin:12px 12px;
     animation-name: click;
@@ -39,6 +44,7 @@ background-color: rgb(65, 72, 88);
 
 border-radius: 8px; 
 }
+
 
 @keyframes click {
     from{
