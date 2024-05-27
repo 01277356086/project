@@ -4,7 +4,7 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; 
+  -moz-osx-font-smoothing: grayscale;  
 }
 
 
@@ -18,12 +18,16 @@ code {
     display: flex;
     flex-direction: column;
     animation-name: none;
-    animation-duration: 0;
+    animation-duration: 0;  
   }
   .row{
     display: flex;
     flex-direction: column; 
+  
+      
+  
   }
+  
   .cate{
     margin:0px 0px;
     animation-name: none;

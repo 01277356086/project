@@ -16,13 +16,15 @@ function Detail() {
             .then((res) => res.json())
             .then((product) => setproduct(product))
     }, []);
-
-
+ 
     return (
         <>
             <div>
-                <Button><Link to={"/products"} className="btn">  Retutn To All Products  </Link></Button>
-                <Product prod={product} showtitle={true} showButton={false} />
+                <Button  data-aos="fade-left"
+     data-aos-anchor="#example-anchor" 
+     data-aos-duration="300"><Link to={"/products"} className="btn">  Retutn To All Products  </Link></Button>
+                <Product   prod={product} showtitle={true} showButton={false} />
+ 
  
             </div>
         </>

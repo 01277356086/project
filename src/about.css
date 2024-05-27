@@ -1,10 +1,9 @@
 .back{
     width: 90%;
-    height: 100vh;
-    background-color: aqua;
+    height: 100vh; 
     background-image: url(./images/flo50.jpg);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size:  100%;
     box-sizing: border-box;
     border-radius: 10px;
  }

@@ -9,6 +9,7 @@ import "./productslist.css"
 function Slider() {
   return (
     <>
+    <div data-aos="zoom-in" data-aos-duration="3000">
       <Carousel>
         <Carousel.Item>
           <img className="d-block" src={img1} />
@@ -20,6 +21,7 @@ function Slider() {
           <img className="d-block" src={img3} />
         </Carousel.Item>
       </Carousel>
+      </div>
     </>
   )
 }

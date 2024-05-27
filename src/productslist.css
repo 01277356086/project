@@ -1,9 +1,8 @@
  
 .card-img{
-    height: 50vh;
-    
+    height: 50vh; 
 }
- 
+  
 .active{
     
     background-color: rgb(156, 161, 161);
@@ -19,9 +18,7 @@
     margin:12px 12px;
     animation-name: click;
     animation-duration: 1.5s;
-}
- 
- 
+} 
 .slide{
     width: 98%;
     display: flex;
@@ -40,8 +37,7 @@ border-radius: 1%;
 bottom: 20px;
 right: 20px;
 font-weight: bold;
-background-color: rgb(65, 72, 88);
-
+background-color: rgb(65, 72, 88); 
 border-radius: 8px; 
 }
 
@@ -57,4 +53,4 @@ width:  145px;
 .btn{
     color: white;
 }
- 
+  

@@ -12,8 +12,7 @@ function App() {
       <Routes >
         <Route  path="/" element={
           <>     
-            <Slider />
-            {/* <Scroll/> */}
+            <Slider /> 
             <Productslist /></>
         } />
         <Route  path="prod/:prodid" element={<Detail/>}/>

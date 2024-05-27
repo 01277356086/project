@@ -1,8 +1,7 @@
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button'; 
 import Product from './Product';
 import { useEffect, useState } from 'react';
-import "./productslist.css"
+import "./productslist.css" 
 import Scroll from './Scroll';
 
 function Productslist() {
@@ -13,12 +12,10 @@ function Productslist() {
     const [categories, setcategories] = useState([]);
 
 
-
-
     const getprodcategory = (catname) => {
         fetch(`https://fakestoreapi.com/products/category/${catname}`)
             .then((res) => res.json())
-            .then((data) => setproducts(data))
+            .then((data) =>  setproducts(data))
     }
     useEffect(() => {
 
@@ -32,13 +29,12 @@ function Productslist() {
             .then((cate) => setcategories(cate))
     }, []);
 
-
-
-    
+ 
     return (
-        <>  <Scroll />
-            <h1 className="text-center p-5"> Products</h1>
-            <div className='container'>
+        <> 
+        
+            <h1 className="text-center p-5"  data-aos="zoom-out"  data-aos-duration="3000"> Products</h1>
+            <div className='container' >
                 <Button variant="primary" onClick={() => {
 
                     fetch(apilink)
@@ -47,8 +43,8 @@ function Productslist() {
                 }} > All </Button> 
                 {
                     categories.map((cate) => {
-                        return (
-                            <Button className='cate' variant="primary" key={cate} onClick={() => { getprodcategory(cate) }}> {cate}
+                        return ( 
+                            <Button className='cate' variant="primary" key={cate.id} onClick={() => { getprodcategory(cate) }}> {cate}
                             </Button>
                         )
                     })
@@ -56,16 +52,16 @@ function Productslist() {
                 <div className='row'>
                     {products.map((prod) => {
 
-                        return (
-                            <div className='col-4 ' key={prod.id}>
-                                <Product prod={prod} showtitle={false} className='prods' showButton={true} />
-                            </div>
+                        return (<div className='col-4 '  data-aos="zoom-in-up"  data-aos-duration="3000">
+                            <div key={prod.id}>
+                                <Product  prod={prod}   showtitle={false} className='prods' showButton={true} />
+                            </div></div>
                         )
                     })}
                 </div>
 
             </div>
-
+<Scroll/>
         </>
     )
 }

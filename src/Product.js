@@ -13,13 +13,12 @@ function Product(props) {
   const { prod, showButton,showtitle } = props;
   return (
     <>
-
-      <Card style={{ height: '33rem', width: '22rem' }}>
+       <Card   style={{ height: '33rem', width: '20rem'}}>
 
 
       <Carousel>
         <Carousel.Item><Link to={`/prod/${prod.id}`}>
-         <Card.Img   className='card-img' alt={prod.title} src={prod.image}  /> </Link>
+         <Card.Img  className='card-img' alt={prod.title} src={prod.image}  /> </Link>
         </Carousel.Item>
         <Carousel.Item> <Link to={`/prod/${prod.id}`}>
         <Card.Img   className='card-img' alt={prod.title} src={prod.image}  /> </Link>
@@ -27,11 +26,8 @@ function Product(props) {
         
       </Carousel>
 
-
-        
-       
         <Card.Body>
-         <Card.Title>{prod.title}</Card.Title>
+         <Card.Title >{prod.title}</Card.Title>
          {
           showtitle ?<Card.Text>  {prod.description} </Card.Text>  :null
          }
@@ -45,7 +41,7 @@ function Product(props) {
           }
 
 
-        </Card.Body>
+        </Card.Body> 
       </Card>
     </>
   )
