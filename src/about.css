@@ -3,7 +3,7 @@
     height: 100vh; 
     background-image: url(./images/flo50.jpg);
     background-repeat: no-repeat;
-    background-size:  100%;
+    background-size: 100% 100%;
     box-sizing: border-box;
     border-radius: 10px;
  }
@@ -45,4 +45,15 @@
     border-style:double;
     border-color: white;
     background-clip: text;
+}
+@media(max-width:700px) {
+   
+      .back-all{
+        height: auto; 
+      }
+       .back{
+        height: auto;
+         
+      }
+     
 }

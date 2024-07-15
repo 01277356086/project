@@ -23,7 +23,7 @@ function Scroll() {
 
     return (
         <>
-        <Button  variant="outline-light" className="btnscroll" onClick={scroll}>   Top </Button>
+        <Button  data-aos="zoom-out-down"  data-aos-duration="3000" variant="outline-light" className="btnscroll" onClick={scroll}>   Top </Button>
        
         </>
     );

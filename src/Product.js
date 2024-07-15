@@ -13,30 +13,30 @@ function Product(props) {
   const { prod, showButton,showtitle } = props;
   return (
     <>
-       <Card   style={{ height: '33rem', width: '20rem'}}>
+       <Card   style={{ height: '33rem', width: '20rem' }}>
 
 
       <Carousel>
         <Carousel.Item><Link to={`/prod/${prod.id}`}>
-         <Card.Img  className='card-img' alt={prod.title} src={prod.image}  /> </Link>
+         <Card.Img  data-aos="zoom-out"  data-aos-duration="3000" className='card-img' alt={prod.title} src={prod.image}  /> </Link>
         </Carousel.Item>
         <Carousel.Item> <Link to={`/prod/${prod.id}`}>
-        <Card.Img   className='card-img' alt={prod.title} src={prod.image}  /> </Link>
+        <Card.Img   data-aos="zoom-out"  data-aos-duration="3000" className='card-img' alt={prod.title} src={prod.image}  /> </Link>
         </Carousel.Item>
         
       </Carousel>
 
         <Card.Body>
-         <Card.Title >{prod.title}</Card.Title>
+         <Card.Title   >{prod.title}</Card.Title>
          {
-          showtitle ?<Card.Text>  {prod.description} </Card.Text>  :null
+          showtitle ?<Card.Text  >  {prod.description} </Card.Text>  :null
          }
           {
-          showtitle ? <Card.Title>{prod.price}$</Card.Title>  :null
+          showtitle ? <Card.Title >{prod.price}$</Card.Title>  :null
          }
           
           {
-            showButton ? <Link to={`/prod/${prod.id}`}><Button variant="primary"> Details Of Product</Button>
+            showButton ? <Link to={`/prod/${prod.id}`}><Button variant="primary" data-aos="zoom-out-right"  data-aos-duration="3000"> Details Of Product</Button>
              </Link> : null
           }
 
